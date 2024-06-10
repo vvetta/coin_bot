@@ -11,7 +11,7 @@ class CoinMarket(object):
             'X-CMC_PRO_API_KEY': self.api_key,
         }
 
-    def get_current_price(self, symbol: list[str] = "BTC", convert: str = "USD") -> dict:
+    def get_current_price(self, symbol: list = "BTC", convert: str = "USD") -> dict:
         """Возвращает актуальную стоимость критовалюты."""
         url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 
